@@ -1,0 +1,26 @@
+body {
+  background-color:#202020;
+}
+
+.pellego_custom_form{
+	.webforms {
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+
+		input[type='text'], input[type='number'], input[type='email']{
+			background-color: #f1f4f7;
+		}
+	}
+
+	label.webforms__label {
+	}
+
+	button[type="submit"] {
+	}
+
+
+}
+
+@media (min-width: 768px){}
+@media (min-width: 992px){}
+@media (min-width: 1200px){}

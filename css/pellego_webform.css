@@ -1,0 +1,10 @@
+body {
+  background-color: #202020; }
+
+.pellego_custom_form .webforms {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
+  .pellego_custom_form .webforms input[type='text'], .pellego_custom_form .webforms input[type='number'], .pellego_custom_form .webforms input[type='email'] {
+    background-color: #f1f4f7; }
+
+/*# sourceMappingURL=pellego_webform.css.map */
