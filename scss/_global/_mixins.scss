@@ -1,0 +1,21 @@
+@mixin transitions($class, $timing, $ease){
+	-webkit-transition: $class $timing $ease;
+	-moz-transition: $class $timing $ease;
+	-ms-transition: $class $timing $ease;
+	-o-transition: $class $timing $ease;
+	transition: $class $timing $ease;
+}
+
+@mixin rotate($deg, $Xorigin, $Yorigin){
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+
+    -webkit-transform-origin: $Xorigin $Yorigin;
+    -moz-transform-origin: $Xorigin $Yorigin;
+    -ms-transform-origin: $Xorigin $Yorigin;
+    -o-transform-origin: $Xorigin $Yorigin;
+    transform-origin: $Xorigin $Yorigin;
+}

@@ -1,26 +1,72 @@
-body {
-  background-color:#202020;
-}
+@import "_global/vars.scss";
+@import "_global/mixins.scss";
 
 .pellego_custom_form{
-	.webforms {
-		font-family: 'Roboto', sans-serif;
-		font-size: 14px;
+	position: relative;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
 
-		input[type='text'], input[type='number'], input[type='email']{
-			background-color: #f1f4f7;
+	background-image: -webkit-linear-gradient(315deg, #2a323b, #11161d);
+	background-image: linear-gradient(135deg, #2a323b, #11161d);
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+
+	.company_logo{
+		position: relative;
+		width: 100%;
+		padding: 30px 15px 20px 15px;
+		box-sizing: border-box;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		background-color: #fff;
+
+		img{
+			width: 100%;
+			max-width: 350px;
 		}
 	}
 
-	label.webforms__label {
+	.container{
+		max-width: 100%;
+		margin-top: -3px;
 	}
 
-	button[type="submit"] {
+	#webforms__fields-container div:first-of-type div:first-of-type .webforms__field{
+		display: none;
 	}
+
+
+	@import "_snippets/header.scss";
+	@import "_snippets/labels.scss";
+	@import "_snippets/inputs.scss";
+	@import "_snippets/buttons.scss";
+	@import "_snippets/input_addons.scss";
 
 
 }
 
-@media (min-width: 768px){}
-@media (min-width: 992px){}
-@media (min-width: 1200px){}
+@media (min-width: 768px){
+	.pellego_custom_form{
+		padding: 40px;
+	}
+}
+
+@media (min-width: 1200px){
+	.pellego_custom_form{
+		padding-left: 200px;
+		padding-right: 200px;
+
+		.company_logo{
+			max-width: 1170px;
+		}
+	}
+}
+
+
+
+
+
+

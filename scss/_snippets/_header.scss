@@ -1,0 +1,26 @@
+.webforms__heading{
+	font-size: 34px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 30px;
+	color: $header-color;
+}
+
+.webforms__description{
+	color: $body-color;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 25px;
+	font-weight: 300;
+}
+
+@media (min-width: 768px){
+	.webforms__heading{
+		text-align: left;
+	}
+
+	.webforms__description{
+		font-size: 18px;
+		line-height: 30px;
+	}
+}

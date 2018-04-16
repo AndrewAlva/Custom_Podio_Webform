@@ -1,0 +1,90 @@
+.btn-default{
+	color: $brand-green;
+	background: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 5px 10px;
+	border: 1px solid $brand-green;
+
+	@include transitions(all, 0.4s, ease-out);
+
+	&:hover, &:active, &:focus{
+		color: #fff;
+		background: $brand-dark-green;
+		border-color: $brand-dark-green;
+		outline: none;
+		box-shadow: 0 0 5px 0 $brand-green;
+	}
+}
+
+.btn-default.field-add-another{
+	padding: 5px 10px 5px 20px;
+
+	&::before{
+		content: "+";
+		position: absolute;
+		width: 30px;
+		height: 18px;
+		line-height: 18px;
+		margin-left: -23px;
+	}
+}
+
+button.field-remove{
+	color: $brand-green;
+	@include transitions(all, 0.4s, ease-out);
+
+	&:hover{
+		color: $brand-dark-green;
+	}
+
+	&:focus{
+		outline-color: $brand-green;
+	}
+}
+
+button[type="submit"] {
+	width: 100%;
+	padding: 14px 15px;
+	color: #fff;
+	background-color: $brand-green;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 1px solid $brand-dark-green;
+	-webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .1);
+	box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .1);
+
+	@include transitions(all, 0.4s, ease-out);
+
+	&:hover, &:focus, &:active, &:active:focus{
+		background-color: $brand-dark-green;
+		border-color: $brand-dark-green;
+		outline: none;
+		box-shadow: 0 0 5px 0 $brand-green;
+	}
+}
+
+
+@media (min-width: 768px){
+	.btn-default{
+		font-size: 16px;
+	}
+
+	.btn-default.field-add-another{
+		padding-left: 30px;
+
+		&::before{
+			height: 23px;
+			line-height: 23px;
+			margin-left: -30px;
+		}
+	}
+
+	button[type="submit"] {
+		margin-top: 20px;
+	}
+}
+
+
+

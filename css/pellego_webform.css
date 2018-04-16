@@ -1,10 +1,334 @@
-body {
-  background-color: #202020; }
-
-.pellego_custom_form .webforms {
+.pellego_custom_form {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(315deg, #2a323b, #11161d);
+  background-image: linear-gradient(135deg, #2a323b, #11161d);
   font-family: 'Roboto', sans-serif;
   font-size: 14px; }
-  .pellego_custom_form .webforms input[type='text'], .pellego_custom_form .webforms input[type='number'], .pellego_custom_form .webforms input[type='email'] {
+  .pellego_custom_form .company_logo {
+    position: relative;
+    width: 100%;
+    padding: 30px 15px 20px 15px;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #fff; }
+    .pellego_custom_form .company_logo img {
+      width: 100%;
+      max-width: 350px; }
+  .pellego_custom_form .container {
+    max-width: 100%;
+    margin-top: -3px; }
+  .pellego_custom_form #webforms__fields-container div:first-of-type div:first-of-type .webforms__field {
+    display: none; }
+  .pellego_custom_form .webforms__heading {
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #404648; }
+  .pellego_custom_form .webforms__description {
+    color: #727e88;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 300; }
+  @media (min-width: 768px) {
+    .pellego_custom_form .webforms__heading {
+      text-align: left; }
+    .pellego_custom_form .webforms__description {
+      font-size: 18px;
+      line-height: 30px; } }
+  .pellego_custom_form #webforms__fields-container {
+    padding-top: 10px; }
+    .pellego_custom_form #webforms__fields-container::before {
+      content: "Contact Info";
+      position: relative;
+      width: 100%;
+      display: block;
+      top: -10px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #ccc;
+      border-bottom: 1px solid #ccc; }
+  .pellego_custom_form label.webforms__label {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #404648; }
+  .pellego_custom_form label.webforms__label:not(:only-child)::after {
+    content: "i";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+    font-family: Times;
+    font-size: 14px;
+    color: #56c3a5;
+    text-align: center;
+    border: 1px solid #56c3a5; }
+  .pellego_custom_form .help-block {
+    display: inline;
+    position: absolute;
+    width: 130px;
+    border-radius: 3px;
+    padding: 7px;
+    margin-top: 34px;
+    margin-left: -65px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    background-color: #56c3a5;
+    border: 1px solid #35a082;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out; }
+    .pellego_custom_form .help-block::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      transform-origin: 0 0;
+      top: -11px;
+      left: 82px;
+      background-color: #56c3a5;
+      border-left: 1px solid #35a082;
+      border-top: 1px solid #35a082; }
+  .pellego_custom_form label.webforms__label:hover + .help-block {
+    z-index: 10;
+    opacity: 1; }
+  .pellego_custom_form .checkbox label {
+    padding-left: 40px; }
+  @media (min-width: 768px) {
+    .pellego_custom_form label.webforms__label {
+      font-size: 20px;
+      line-height: 30px; }
+    .pellego_custom_form label.webforms__label:not(:only-child)::after {
+      width: 22px;
+      height: 22px;
+      line-height: 20px;
+      margin-left: 20px;
+      font-size: 17px;
+      border-width: 2px; }
+    .pellego_custom_form .help-block {
+      width: 280px;
+      margin-top: 0;
+      margin-left: 60px;
+      padding: 7px 15px;
+      text-align: left;
+      font-size: 16px; }
+      .pellego_custom_form .help-block::after {
+        top: 6px;
+        left: 0;
+        border-top: none;
+        border-bottom: 1px solid #35a082; } }
+  .pellego_custom_form input[type='text'], .pellego_custom_form input[type='number'], .pellego_custom_form input[type='email'], .pellego_custom_form select {
+    background-color: #f1f4f7;
+    color: #333333;
+    border: none;
+    border-radius: 3px;
+    min-height: 42px;
+    font-size: 13px;
+    line-height: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .pellego_custom_form input[type='text']:active, .pellego_custom_form input[type='text']:focus, .pellego_custom_form input[type='number']:active, .pellego_custom_form input[type='number']:focus, .pellego_custom_form input[type='email']:active, .pellego_custom_form input[type='email']:focus, .pellego_custom_form select:active, .pellego_custom_form select:focus {
+    border-color: none;
+    outline: none;
+    -webkit-box-shadow: 0 0 5px 0 #56c3a5;
+    box-shadow: 0 0 5px 0 #56c3a5; }
+  .pellego_custom_form .date-field_date {
+    width: 50%;
+    max-width: 200px; }
+  .pellego_custom_form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: url("http://uploads.webflow.com/5a16a37dcc80bd0001ed35f0/5a8ff8ad4001e8000143715d_arrow-down.svg");
+    background-position: right 15px center;
+    background-repeat: no-repeat;
     background-color: #f1f4f7; }
+  .pellego_custom_form select::-ms-expand {
+    display: none; }
+  .pellego_custom_form input[type="radio"], .pellego_custom_form input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: -40px;
+    border: 1px solid #404648;
+    border-radius: 50%;
+    -webkit-transition: border-color 0.3s ease-out;
+    -moz-transition: border-color 0.3s ease-out;
+    -ms-transition: border-color 0.3s ease-out;
+    -o-transition: border-color 0.3s ease-out;
+    transition: border-color 0.3s ease-out; }
+    .pellego_custom_form input[type="radio"] ~ span, .pellego_custom_form input[type="checkbox"] ~ span {
+      margin-left: -10px;
+      font-size: 12px;
+      font-weight: 300;
+      white-space: nowrap;
+      -webkit-transition: color 0.3s ease-out;
+      -moz-transition: color 0.3s ease-out;
+      -ms-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out; }
+    .pellego_custom_form input[type="radio"]:checked, .pellego_custom_form input[type="checkbox"]:checked {
+      border-color: #56c3a5; }
+      .pellego_custom_form input[type="radio"]:checked::after, .pellego_custom_form input[type="checkbox"]:checked::after {
+        content: '\2713';
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        color: #56c3a5; }
+      .pellego_custom_form input[type="radio"]:checked ~ span, .pellego_custom_form input[type="checkbox"]:checked ~ span {
+        color: #56c3a5; }
+    .pellego_custom_form input[type="radio"]:active, .pellego_custom_form input[type="radio"]:focus, .pellego_custom_form input[type="radio"]:hover, .pellego_custom_form input[type="checkbox"]:active, .pellego_custom_form input[type="checkbox"]:focus, .pellego_custom_form input[type="checkbox"]:hover {
+      outline: none;
+      -webkit-box-shadow: 0 0 5px 0 #56c3a5;
+      box-shadow: 0 0 5px 0 #56c3a5;
+      border-color: #56c3a5;
+      color: #56c3a5;
+      background-color: #f1f4f7; }
+      .pellego_custom_form input[type="radio"]:active ~ span, .pellego_custom_form input[type="radio"]:focus ~ span, .pellego_custom_form input[type="radio"]:hover ~ span, .pellego_custom_form input[type="checkbox"]:active ~ span, .pellego_custom_form input[type="checkbox"]:focus ~ span, .pellego_custom_form input[type="checkbox"]:hover ~ span {
+        color: #56c3a5; }
+  .pellego_custom_form .checkbox {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .pellego_custom_form input[type='text'], .pellego_custom_form input[type='number'], .pellego_custom_form input[type='email'], .pellego_custom_form select {
+      font-size: 16px; }
+    .pellego_custom_form input[type="radio"], .pellego_custom_form input[type="checkbox"] {
+      width: 30px;
+      height: 30px;
+      margin-top: 4px; }
+      .pellego_custom_form input[type="radio"] ~ span, .pellego_custom_form input[type="checkbox"] ~ span {
+        margin-left: 0;
+        font-size: 16px; }
+      .pellego_custom_form input[type="radio"]:checked::after, .pellego_custom_form input[type="checkbox"]:checked::after {
+        font-size: 18px;
+        line-height: 30px; }
+    .pellego_custom_form .checkbox {
+      width: 33.32%; } }
+  .pellego_custom_form .btn-default {
+    color: #56c3a5;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px 10px;
+    border: 1px solid #56c3a5;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out; }
+    .pellego_custom_form .btn-default:hover, .pellego_custom_form .btn-default:active, .pellego_custom_form .btn-default:focus {
+      color: #fff;
+      background: #35a082;
+      border-color: #35a082;
+      outline: none;
+      box-shadow: 0 0 5px 0 #56c3a5; }
+  .pellego_custom_form .btn-default.field-add-another {
+    padding: 5px 10px 5px 20px; }
+    .pellego_custom_form .btn-default.field-add-another::before {
+      content: "+";
+      position: absolute;
+      width: 30px;
+      height: 18px;
+      line-height: 18px;
+      margin-left: -23px; }
+  .pellego_custom_form button.field-remove {
+    color: #56c3a5;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out; }
+    .pellego_custom_form button.field-remove:hover {
+      color: #35a082; }
+    .pellego_custom_form button.field-remove:focus {
+      outline-color: #56c3a5; }
+  .pellego_custom_form button[type="submit"] {
+    width: 100%;
+    padding: 14px 15px;
+    color: #fff;
+    background-color: #56c3a5;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid #35a082;
+    -webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out; }
+    .pellego_custom_form button[type="submit"]:hover, .pellego_custom_form button[type="submit"]:focus, .pellego_custom_form button[type="submit"]:active, .pellego_custom_form button[type="submit"]:active:focus {
+      background-color: #35a082;
+      border-color: #35a082;
+      outline: none;
+      box-shadow: 0 0 5px 0 #56c3a5; }
+  @media (min-width: 768px) {
+    .pellego_custom_form .btn-default {
+      font-size: 16px; }
+    .pellego_custom_form .btn-default.field-add-another {
+      padding-left: 30px; }
+      .pellego_custom_form .btn-default.field-add-another::before {
+        height: 23px;
+        line-height: 23px;
+        margin-left: -30px; }
+    .pellego_custom_form button[type="submit"] {
+      margin-top: 20px; } }
+  .pellego_custom_form .input-group {
+    width: 100%; }
+  .pellego_custom_form .input-group-addon:first-child {
+    display: none; }
+
+@media (min-width: 768px) {
+  .pellego_custom_form {
+    padding: 40px; } }
+@media (min-width: 1200px) {
+  .pellego_custom_form {
+    padding-left: 200px;
+    padding-right: 200px; }
+    .pellego_custom_form .company_logo {
+      max-width: 1170px; } }
 
 /*# sourceMappingURL=pellego_webform.css.map */

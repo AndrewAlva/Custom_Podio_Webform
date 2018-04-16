@@ -1,0 +1,136 @@
+input[type='text'], input[type='number'], input[type='email'], select{
+	background-color: $brand-gray;
+	color: $input-color;
+	border: none;
+	border-radius: 3px;
+	min-height: 42px;
+	font-size: 13px;
+	line-height: 17px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input[type='text']:active, input[type='text']:focus, input[type='number']:active, input[type='number']:focus, input[type='email']:active, input[type='email']:focus, select:active, select:focus{
+	border-color: none;
+	outline: none;
+	-webkit-box-shadow: 0 0 5px 0 $brand-green;
+	box-shadow: 0 0 5px 0 $brand-green;
+}
+
+.date-field_date{
+	width: 50%;
+	max-width: 200px;
+}
+
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background: url("http://uploads.webflow.com/5a16a37dcc80bd0001ed35f0/5a8ff8ad4001e8000143715d_arrow-down.svg");
+	background-position: right 15px center;
+	background-repeat: no-repeat;
+	background-color: $brand-gray;
+}
+
+select::-ms-expand{
+	display: none;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+
+	width: 25px;
+	height: 25px;
+	margin-top: 7px;
+	margin-left: -40px;
+	border: 1px solid $header-color;
+	border-radius: 50%;
+
+	@include transitions(border-color, 0.3s, ease-out);
+
+	& ~ span{
+		margin-left: -10px;
+		font-size: 12px;
+		font-weight: 300;
+		white-space: nowrap;
+		@include transitions(color, 0.3s, ease-out);
+	}
+
+	&:checked{
+		border-color: $brand-green;
+
+		&::after{
+			content: '\2713';
+			position: absolute;
+			margin: auto;
+			left: 0; right: 0;
+			font-size: 16px;
+			line-height: 25px;
+			text-align: center;
+			color: $brand-green;
+		}
+
+		& ~ span{
+			color: $brand-green;
+		}
+	}
+
+	&:active, &:focus, &:hover{
+		outline: none;
+		-webkit-box-shadow: 0 0 5px 0 $brand-green;
+		box-shadow: 0 0 5px 0 $brand-green;
+		border-color: $brand-green;
+		color: $brand-green;
+		background-color: $brand-gray;
+
+		& ~ span{
+			color: $brand-green;
+		}
+	}
+}
+
+.checkbox{
+	display: inline-block;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px){
+	input[type='text'], input[type='number'], input[type='email'], select{
+		font-size: 16px;
+	}
+
+	input[type="radio"], input[type="checkbox"]{
+		width: 30px;
+		height: 30px;
+		margin-top: 4px;
+
+		& ~ span{
+			margin-left: 0;
+			font-size: 16px;
+		}
+
+		&:checked{
+			&::after{
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	.checkbox{
+		width: 33.32%;
+	}
+}
+
+
+@media (min-width: 1200px){}
