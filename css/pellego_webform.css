@@ -4,10 +4,9 @@
   padding: 15px;
   box-sizing: border-box;
   overflow: hidden;
-  background-image: -webkit-linear-gradient(315deg, #2a323b, #11161d);
-  background-image: linear-gradient(135deg, #2a323b, #11161d);
+  background: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px; }
+  font-size: 10px; }
   .pellego_custom_form .company_logo {
     position: relative;
     width: 100%;
@@ -21,18 +20,19 @@
       max-width: 350px; }
   .pellego_custom_form .container {
     max-width: 100%;
-    margin-top: -3px; }
+    margin-top: 10px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1); }
   .pellego_custom_form #webforms__fields-container div:first-of-type div:first-of-type .webforms__field {
     display: none; }
   .pellego_custom_form .webforms__heading {
-    font-size: 34px;
+    font-size: 3.4em;
     font-weight: 300;
     text-align: center;
     margin-bottom: 30px;
     color: #404648; }
   .pellego_custom_form .webforms__description {
     color: #727e88;
-    font-size: 14px;
+    font-size: 1.6em;
     letter-spacing: 0.5px;
     line-height: 25px;
     font-weight: 300; }
@@ -40,7 +40,6 @@
     .pellego_custom_form .webforms__heading {
       text-align: left; }
     .pellego_custom_form .webforms__description {
-      font-size: 18px;
       line-height: 30px; } }
   .pellego_custom_form #webforms__fields-container::before {
     content: "Contact Info";
@@ -49,16 +48,10 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 300;
     color: #56c3a5;
     border-bottom: 1px solid #56c3a5; }
-    @media (min-width: 768px) {
-      .pellego_custom_form #webforms__fields-container::before {
-        color: red; } }
-    @media (min-width: 1200px) {
-      .pellego_custom_form #webforms__fields-container::before {
-        color: red; } }
   .pellego_custom_form #webforms__fields-container div:nth-child(7) .webforms__field::before {
     content: "Alert Settings";
     position: relative;
@@ -66,16 +59,10 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 300;
     color: #56c3a5;
     border-bottom: 1px solid #56c3a5; }
-    @media (min-width: 768px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(7) .webforms__field::before {
-        color: red; } }
-    @media (min-width: 1200px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(7) .webforms__field::before {
-        color: red; } }
   .pellego_custom_form #webforms__fields-container div:nth-child(10) .webforms__field::before {
     content: "Deal Type";
     position: relative;
@@ -83,16 +70,10 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 300;
     color: #56c3a5;
     border-bottom: 1px solid #56c3a5; }
-    @media (min-width: 768px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(10) .webforms__field::before {
-        color: red; } }
-    @media (min-width: 1200px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(10) .webforms__field::before {
-        color: red; } }
   .pellego_custom_form #webforms__fields-container div:nth-child(12) .webforms__field::before {
     content: "Locations";
     position: relative;
@@ -100,16 +81,10 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 300;
     color: #56c3a5;
     border-bottom: 1px solid #56c3a5; }
-    @media (min-width: 768px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(12) .webforms__field::before {
-        color: red; } }
-    @media (min-width: 1200px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(12) .webforms__field::before {
-        color: red; } }
   .pellego_custom_form #webforms__fields-container div:nth-child(16) .webforms__field::before {
     content: "Financing";
     position: relative;
@@ -117,16 +92,10 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 300;
     color: #56c3a5;
     border-bottom: 1px solid #56c3a5; }
-    @media (min-width: 768px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(16) .webforms__field::before {
-        color: red; } }
-    @media (min-width: 1200px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(16) .webforms__field::before {
-        color: red; } }
   .pellego_custom_form #webforms__fields-container div:nth-child(21) .webforms__field::before {
     content: "Others";
     position: relative;
@@ -134,19 +103,13 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 300;
     color: #56c3a5;
     border-bottom: 1px solid #56c3a5; }
-    @media (min-width: 768px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(21) .webforms__field::before {
-        color: red; } }
-    @media (min-width: 1200px) {
-      .pellego_custom_form #webforms__fields-container div:nth-child(21) .webforms__field::before {
-        color: red; } }
   .pellego_custom_form label.webforms__label {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.3em;
     line-height: 25px;
     font-weight: 300;
     color: #404648; }
@@ -160,7 +123,7 @@
     margin-left: 10px;
     border-radius: 50%;
     font-family: Times;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #56c3a5;
     text-align: center;
     border: 1px solid #56c3a5; }
@@ -175,7 +138,7 @@
     text-align: center;
     color: #fff;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 1.3em;
     background-color: #56c3a5;
     border: 1px solid #35a082;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
@@ -213,22 +176,17 @@
     padding-left: 40px; }
   @media (min-width: 768px) {
     .pellego_custom_form label.webforms__label {
-      font-size: 20px;
       line-height: 30px; }
     .pellego_custom_form label.webforms__label:not(:only-child)::after {
       width: 22px;
       height: 22px;
-      line-height: 20px;
-      margin-left: 20px;
-      font-size: 17px;
-      border-width: 2px; }
+      line-height: 21px; }
     .pellego_custom_form .help-block {
       width: 280px;
       margin-top: 0;
       margin-left: 60px;
       padding: 7px 15px;
-      text-align: left;
-      font-size: 16px; }
+      text-align: left; }
       .pellego_custom_form .help-block::after {
         top: 6px;
         left: 0;
@@ -240,7 +198,7 @@
     border: none;
     border-radius: 3px;
     min-height: 42px;
-    font-size: 13px;
+    font-size: 1.3em;
     line-height: 17px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
@@ -275,7 +233,6 @@
     margin-top: 7px;
     margin-left: -40px;
     border: 1px solid #404648;
-    border-radius: 50%;
     -webkit-transition: border-color 0.3s ease-out;
     -moz-transition: border-color 0.3s ease-out;
     -ms-transition: border-color 0.3s ease-out;
@@ -283,7 +240,7 @@
     transition: border-color 0.3s ease-out; }
     .pellego_custom_form input[type="radio"] ~ span, .pellego_custom_form input[type="checkbox"] ~ span {
       margin-left: -10px;
-      font-size: 12px;
+      font-size: 1.3em;
       font-weight: 300;
       white-space: nowrap;
       -webkit-transition: color 0.3s ease-out;
@@ -299,7 +256,7 @@
         margin: auto;
         left: 0;
         right: 0;
-        font-size: 16px;
+        font-size: 1.6em;
         line-height: 25px;
         text-align: center;
         color: #56c3a5; }
@@ -314,6 +271,8 @@
       background-color: #f1f4f7; }
       .pellego_custom_form input[type="radio"]:active ~ span, .pellego_custom_form input[type="radio"]:focus ~ span, .pellego_custom_form input[type="radio"]:hover ~ span, .pellego_custom_form input[type="checkbox"]:active ~ span, .pellego_custom_form input[type="checkbox"]:focus ~ span, .pellego_custom_form input[type="checkbox"]:hover ~ span {
         color: #56c3a5; }
+  .pellego_custom_form input[type="checkbox"] {
+    border-radius: 3px; }
   .pellego_custom_form .checkbox {
     display: inline-block;
     width: 50%;
@@ -322,24 +281,20 @@
     margin-top: 0;
     margin-bottom: 0; }
   @media (min-width: 768px) {
-    .pellego_custom_form input[type='text'], .pellego_custom_form input[type='number'], .pellego_custom_form input[type='email'], .pellego_custom_form select {
-      font-size: 16px; }
     .pellego_custom_form input[type="radio"], .pellego_custom_form input[type="checkbox"] {
       width: 30px;
       height: 30px;
       margin-top: 4px; }
       .pellego_custom_form input[type="radio"] ~ span, .pellego_custom_form input[type="checkbox"] ~ span {
-        margin-left: 0;
-        font-size: 16px; }
+        margin-left: 0; }
       .pellego_custom_form input[type="radio"]:checked::after, .pellego_custom_form input[type="checkbox"]:checked::after {
-        font-size: 18px;
         line-height: 30px; }
     .pellego_custom_form .checkbox {
       width: 33.32%; } }
   .pellego_custom_form .btn-default {
     color: #56c3a5;
     background: #fff;
-    font-size: 12px;
+    font-size: 1.3em;
     font-weight: 300;
     padding: 5px 10px;
     border: 1px solid #56c3a5;
@@ -379,7 +334,7 @@
     padding: 14px 15px;
     color: #fff;
     background-color: #56c3a5;
-    font-size: 16px;
+    font-size: 1.6em;
     font-weight: 400;
     text-transform: uppercase;
     border: 1px solid #35a082;
@@ -396,8 +351,6 @@
       outline: none;
       box-shadow: 0 0 5px 0 #56c3a5; }
   @media (min-width: 768px) {
-    .pellego_custom_form .btn-default {
-      font-size: 16px; }
     .pellego_custom_form .btn-default.field-add-another {
       padding-left: 30px; }
       .pellego_custom_form .btn-default.field-add-another::before {
@@ -413,7 +366,8 @@
 
 @media (min-width: 768px) {
   .pellego_custom_form {
-    padding: 40px; } }
+    padding: 40px;
+    font-size: 14px; } }
 @media (min-width: 1200px) {
   .pellego_custom_form {
     padding-left: 200px;

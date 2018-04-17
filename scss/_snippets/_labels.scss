@@ -1,6 +1,6 @@
 label.webforms__label {
 	display: inline-block;
-	font-size: 16px;
+	font-size: $xs__font-size;
 	line-height: 25px;
 	font-weight: 300;
 	color: $header-color;
@@ -18,7 +18,7 @@ label.webforms__label:not(:only-child){
 		// padding-left: 1px;
 		border-radius: 50%;
 		font-family: Times;
-		font-size: 14px;
+		font-size: $xxs__font-size;
 		color: $brand-green;
 		text-align: center;
 		border: 1px solid $brand-green;
@@ -36,7 +36,7 @@ label.webforms__label:not(:only-child){
 	text-align: center;
 	color: #fff;
 	font-weight: 300;
-	font-size: 12px;
+	font-size: $xs__font-size;
 	background-color: $brand-green;
 	border: 1px solid $brand-dark-green;
 	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25);
@@ -73,7 +73,7 @@ label.webforms__label:hover{
 
 @media (min-width: 768px){
 	label.webforms__label{
-		font-size: 20px;
+		// font-size: 20px;
 		line-height: 30px;
 	}
 
@@ -81,10 +81,8 @@ label.webforms__label:hover{
 		&::after{
 			width: 22px;
 			height: 22px;
-			line-height: 20px;
-			margin-left: 20px;
-			font-size: 17px;
-			border-width: 2px;
+			line-height: 21px;
+			// font-size: 17px;
 		}
 	}
 
@@ -94,7 +92,7 @@ label.webforms__label:hover{
 		margin-left: 60px;
 		padding: 7px 15px;
 		text-align: left;
-		font-size: 16px;
+		// font-size: 16px;
 
 		&::after{
 			top: 6px;

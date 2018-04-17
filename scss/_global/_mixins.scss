@@ -26,7 +26,7 @@
     display: block;
     top: -15px;
     margin-top: 60px;
-    font-size: $headings-font-size;
+    font-size: $lg__font-size;
     font-weight: 300;
     color: $brand-green;
 
@@ -37,12 +37,4 @@
     // background-position: bottom;
     // background-size: 10px 1px;
     // background-repeat: repeat-x;
-
-    @media (min-width: 768px){
-        color: red;
-    }
-
-    @media (min-width: 1200px){
-        color: red;
-    }
 }

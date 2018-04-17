@@ -1,6 +1,11 @@
 @import "_global/vars.scss";
 @import "_global/mixins.scss";
 
+// Provisional font color 'cause no internet assets
+// *{color: #fff !important;}
+// input{color: #000 !important;}
+
+
 .pellego_custom_form{
 	position: relative;
 	width: 100%;
@@ -8,11 +13,12 @@
 	box-sizing: border-box;
 	overflow: hidden;
 
-	background-image: -webkit-linear-gradient(315deg, #2a323b, #11161d);
-	background-image: linear-gradient(135deg, #2a323b, #11161d);
+	// background-image: -webkit-linear-gradient(315deg, #2a323b, #11161d);
+	// background-image: linear-gradient(135deg, #2a323b, #11161d);
+	background: #fff;
 
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-size: 10px;
 
 	.company_logo{
 		position: relative;
@@ -31,7 +37,8 @@
 
 	.container{
 		max-width: 100%;
-		margin-top: -3px;
+		margin-top: 10px;
+		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
 	}
 
 	#webforms__fields-container div:first-of-type div:first-of-type .webforms__field{
@@ -52,6 +59,7 @@
 @media (min-width: 768px){
 	.pellego_custom_form{
 		padding: 40px;
+		font-size: 14px;
 	}
 }
 

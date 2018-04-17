@@ -1,7 +1,7 @@
 .btn-default{
 	color: $brand-green;
 	background: #fff;
-	font-size: 12px;
+	font-size: $xs__font-size;
 	font-weight: 300;
 	padding: 5px 10px;
 	border: 1px solid $brand-green;
@@ -48,7 +48,7 @@ button[type="submit"] {
 	padding: 14px 15px;
 	color: #fff;
 	background-color: $brand-green;
-	font-size: 16px;
+	font-size: $sm__font-size;
 	font-weight: 400;
 	text-transform: uppercase;
 	border: 1px solid $brand-dark-green;
@@ -68,7 +68,7 @@ button[type="submit"] {
 
 @media (min-width: 768px){
 	.btn-default{
-		font-size: 16px;
+		// font-size: 16px;
 	}
 
 	.btn-default.field-add-another{

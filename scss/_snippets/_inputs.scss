@@ -4,7 +4,7 @@ input[type='text'], input[type='number'], input[type='email'], select{
 	border: none;
 	border-radius: 3px;
 	min-height: 42px;
-	font-size: 13px;
+	font-size: $xs__font-size;
 	line-height: 17px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -50,13 +50,12 @@ input[type="radio"], input[type="checkbox"]{
 	margin-top: 7px;
 	margin-left: -40px;
 	border: 1px solid $header-color;
-	border-radius: 50%;
 
 	@include transitions(border-color, 0.3s, ease-out);
 
 	& ~ span{
 		margin-left: -10px;
-		font-size: 12px;
+		font-size: $xs__font-size;
 		font-weight: 300;
 		white-space: nowrap;
 		@include transitions(color, 0.3s, ease-out);
@@ -70,7 +69,7 @@ input[type="radio"], input[type="checkbox"]{
 			position: absolute;
 			margin: auto;
 			left: 0; right: 0;
-			font-size: 16px;
+			font-size: $sm__font-size;
 			line-height: 25px;
 			text-align: center;
 			color: $brand-green;
@@ -95,6 +94,10 @@ input[type="radio"], input[type="checkbox"]{
 	}
 }
 
+input[type="checkbox"]{
+	border-radius: 3px;
+}
+
 .checkbox{
 	display: inline-block;
 	width: 50%;
@@ -106,7 +109,7 @@ input[type="radio"], input[type="checkbox"]{
 
 @media (min-width: 768px){
 	input[type='text'], input[type='number'], input[type='email'], select{
-		font-size: 16px;
+		// font-size: 16px;
 	}
 
 	input[type="radio"], input[type="checkbox"]{
@@ -116,12 +119,12 @@ input[type="radio"], input[type="checkbox"]{
 
 		& ~ span{
 			margin-left: 0;
-			font-size: 16px;
+			// font-size: 16px;
 		}
 
 		&:checked{
 			&::after{
-				font-size: 18px;
+				// font-size: 18px;
 				line-height: 30px;
 			}
 		}
