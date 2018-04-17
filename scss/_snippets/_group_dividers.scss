@@ -1,0 +1,57 @@
+#webforms__fields-container{
+
+	&::before{
+		content: "Contact Info";
+		@include group_divider_style();
+	}
+
+	// If the 7th field is the first "Deal Alerts" field in the new group
+	div:nth-child(7){
+		.webforms__field{
+			&::before{
+				content: "Alert Settings";
+				@include group_divider_style();
+			}
+		}
+	}
+
+	// If the 10th field is the first "Strategies" field in the new group
+	div:nth-child(10){
+		.webforms__field{
+			&::before{
+				content: "Deal Type";
+				@include group_divider_style();
+			}
+		}
+	}
+
+	// If the 12th field is the first "Counties" field in the new group
+	div:nth-child(12){
+		.webforms__field{
+			&::before{
+				content: "Locations";
+				@include group_divider_style();
+			}
+		}
+	}
+
+	// If the 16th field is the first "Loans" field in the new group
+	div:nth-child(16){
+		.webforms__field{
+			&::before{
+				content: "Financing";
+				@include group_divider_style();
+			}
+		}
+	}
+
+	// If the 21th field is the first "_" field in the new group
+	div:nth-child(21){
+		.webforms__field{
+			&::before{
+				content: "Others";
+				@include group_divider_style();
+			}
+		}
+	}
+}

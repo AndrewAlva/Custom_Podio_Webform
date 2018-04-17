@@ -40,6 +40,7 @@
 
 
 	@import "_snippets/header.scss";
+	@import "_snippets/group_dividers.scss";
 	@import "_snippets/labels.scss";
 	@import "_snippets/inputs.scss";
 	@import "_snippets/buttons.scss";
@@ -61,6 +62,7 @@
 
 		.company_logo{
 			max-width: 1170px;
+			margin: 0 auto;
 		}
 	}
 }

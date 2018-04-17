@@ -19,3 +19,30 @@
     -o-transform-origin: $Xorigin $Yorigin;
     transform-origin: $Xorigin $Yorigin;
 }
+
+@mixin group_divider_style(){
+    position: relative;
+    width: 100%;
+    display: block;
+    top: -15px;
+    margin-top: 60px;
+    font-size: $headings-font-size;
+    font-weight: 300;
+    color: $brand-green;
+
+    border-bottom: 1px solid $brand-green;
+
+    // padding-bottom: 5px;
+    // background-image: linear-gradient(to right, $brand-green 80%, rgba(255,255,255,0) 0%);
+    // background-position: bottom;
+    // background-size: 10px 1px;
+    // background-repeat: repeat-x;
+
+    @media (min-width: 768px){
+        color: red;
+    }
+
+    @media (min-width: 1200px){
+        color: red;
+    }
+}
