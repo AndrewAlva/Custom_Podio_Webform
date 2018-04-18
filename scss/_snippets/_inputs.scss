@@ -17,25 +17,18 @@ input[type='text']:active, input[type='text']:focus, input[type='number']:active
 	box-shadow: 0 0 5px 0 $brand-green;
 }
 
-.date-field_date{
-	width: 50%;
-	max-width: 200px;
+input[type='number']{
+	// background-color: red;
 }
 
-select{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-	background: url("http://uploads.webflow.com/5a16a37dcc80bd0001ed35f0/5a8ff8ad4001e8000143715d_arrow-down.svg");
-	background-position: right 15px center;
-	background-repeat: no-repeat;
-	background-color: $brand-gray;
-}
-
-select::-ms-expand{
-	display: none;
+#webforms__fields-container{
+	// "Locations" number input
+	div:nth-child(14){
+		input[type='number']{
+			width: 50%;
+			max-width: 200px;
+		}
+	}
 }
 
 input[type="radio"], input[type="checkbox"]{
@@ -107,6 +100,29 @@ input[type="checkbox"]{
 	margin-bottom: 0;
 }
 
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background: url("http://uploads.webflow.com/5a16a37dcc80bd0001ed35f0/5a8ff8ad4001e8000143715d_arrow-down.svg");
+	background-position: right 15px center;
+	background-repeat: no-repeat;
+	background-color: $brand-gray;
+}
+
+select::-ms-expand{
+	display: none;
+}
+
+.date-field_date{
+	width: 50%;
+	max-width: 200px;
+}
+
+
+
 @media (min-width: 768px){
 	input[type='text'], input[type='number'], input[type='email'], select{
 		// font-size: 16px;
@@ -131,7 +147,7 @@ input[type="checkbox"]{
 	}
 
 	.checkbox{
-		width: 33.32%;
+		width: 25%;
 	}
 }
 

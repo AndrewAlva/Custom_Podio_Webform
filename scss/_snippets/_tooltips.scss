@@ -1,0 +1,146 @@
+label.webforms__label:not(:only-child){
+	&::after{
+		content: "i";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		line-height: 15px;
+		margin-top: 2px;
+		margin-left: 5px;
+		// padding-left: 1px;
+		border-radius: 50%;
+		font-family: Times;
+		font-size: $xxs__font-size;
+		color: $brand-green;
+		text-align: center;
+		border: 1px solid $brand-green;
+	}
+}
+
+.help-block{
+	display: inline;
+	position: absolute;
+	width: 130px;
+	border-radius: 3px;
+	padding: 7px;
+	margin-top: 34px;
+	margin-left: -71px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	font-size: $xs__font-size;
+	background-color: $brand-green;
+	border: 1px solid $brand-dark-green;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25);
+	z-index: -1;
+	opacity: 0;
+
+	@include transitions(all, 0.4s, ease-out);
+
+	&::after{
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		@include rotate(45deg, 0, 0);
+		top: -11px;
+		left: 82px;
+		background-color: $brand-green;
+		border-left: 1px solid $brand-dark-green;
+		border-top: 1px solid $brand-dark-green;
+	}
+}
+
+label.webforms__label:hover{
+	& + .help-block{
+		z-index: 10;
+		opacity: 1;
+	}
+}
+
+#webforms__fields-container{
+	// Smaller inputs
+	div:nth-child(n+23):nth-child(-n+28), div:nth-child(n+31):nth-child(-n+36){
+		.help-block{
+			margin-top: 70px;
+			margin-left: -98px;
+
+			&::after{
+				left: 50%;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	label.webforms__label:not(:only-child){
+		&::after{
+			width: 22px;
+			height: 22px;
+			margin-left: 10px;
+			line-height: 21px;
+			// font-size: 17px;
+		}
+	}
+
+	.help-block{
+		width: 210px;
+		margin-top: -4px;
+		margin-left: 50px;
+		padding: 7px 15px;
+		text-align: left;
+		// font-size: 16px;
+
+		&::after{
+			top: 6px;
+			left: 0;
+			border-top: none;
+			border-bottom: 1px solid $brand-dark-green;
+		}
+	}
+
+	#webforms__fields-container{
+		// Smaller inputs
+		div:nth-child(n+23):nth-child(-n+28), div:nth-child(n+31):nth-child(-n+36){
+			.help-block{
+				margin-top: 75px;
+				margin-left: -190px;
+
+				&::after{
+					top: -10px;
+					left: 50%;
+				}
+			}
+		}
+
+		div:nth-child(n+35):nth-child(-n+36){
+			.help-block{
+				&::after{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	.help-block{
+		width: 380px;
+	}
+
+	#webforms__fields-container{
+		div:nth-child(n+35):nth-child(-n+36){
+			.help-block{
+				margin-top: -4px;
+				margin-left: 50px;
+
+				&::after{
+					top: 6px;
+					left: 0;
+					border-top: none;
+					border-bottom: 1px solid $brand-dark-green;
+				}
+			}
+		}
+	}
+}

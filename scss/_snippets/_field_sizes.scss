@@ -1,0 +1,92 @@
+// Don't show the "Client ID" field
+#webforms__fields-container > div:first-of-type > div:first-of-type{
+	display: none;
+}
+
+#webforms__fields-container{
+	// "Financing" number fields
+	div:nth-child(n+17):nth-child(-n+19){
+		width: 30%;
+		// max-width: 75px;
+		display: inline-block;
+	}
+	div:nth-child(n+17):nth-child(-n+18){
+		margin-right: 5%;
+	}
+
+	// "Others" number fields
+	// Larger fields
+	div:nth-child(n+21):nth-child(-n+22){
+		width: 47.5%;
+		display: inline-block;
+
+		input[type='number']{
+			// background-color: aqua;
+		}
+	}
+	div:nth-child(21){
+		margin-right: 5%;
+	}
+
+	// Smaller fields
+	div:nth-child(n+23):nth-child(-n+28), div:nth-child(n+31):nth-child(-n+36){
+		width: 30%;
+		// max-width: 80px;
+		display: inline-block;
+		vertical-align: bottom;
+
+		input[type='number']{
+			// background-color: blue;
+		}
+	}
+	div:nth-child(23), div:nth-child(24), div:nth-child(26), div:nth-child(27), div:nth-child(31), div:nth-child(32), div:nth-child(34), div:nth-child(35){
+		margin-right: 5%;
+	}
+}
+
+@media (min-width: 768px){
+	#webforms__fields-container > div:first-of-type > div:nth-child(3), #webforms__fields-container > div:first-of-type > div:nth-child(5), #webforms__fields-container > div:first-of-type > div:nth-child(8), #webforms__fields-container > div:first-of-type > div:nth-child(29){
+		margin-right: 5%;
+	}
+	#webforms__fields-container > div:first-of-type > div:nth-child(n+3):nth-child(-n+6), #webforms__fields-container > div:first-of-type > div:nth-child(n+8):nth-child(-n+9), #webforms__fields-container > div:first-of-type > div:nth-child(n+29):nth-child(-n+30){
+		width: 47.5%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#webforms__fields-container > div:first-of-type > div:nth-child(7){
+		.checkbox{
+			width: 47.5%;
+		}
+		.checkbox:first-of-type{
+			margin-right: 5%;
+		}
+	}
+
+	#webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12), #webforms__fields-container > div:first-of-type > div:nth-child(16){
+		.checkbox{
+			width: 21.25%;
+
+			&:nth-child(n+1):nth-child(-n+3), &:nth-child(n+5):nth-child(-n+7){
+				margin-right: 5%;
+			}
+		}
+	}
+}
+
+
+@media (min-width: 1200px){
+	#webforms__fields-container{
+		// "Financing" number fields // "Others" number fields // Smaller fields
+		div:nth-child(n+17):nth-child(-n+19), div:nth-child(n+21):nth-child(-n+22), div:nth-child(n+23):nth-child(-n+28), div:nth-child(n+31):nth-child(-n+36){
+			width: 21.25%;
+		}
+
+		div:nth-child(24), div:nth-child(34){
+			margin-right: 0;
+		}
+		div:nth-child(21), div:nth-child(22), div:nth-child(25), div:nth-child(33){
+			margin-right: 5%;
+		}
+	}
+}

@@ -1,4 +1,6 @@
 .webforms__heading{
+	display: none;
+	
 	font-size: $xl__font-size;
 	font-weight: 300;
 	text-align: center;
@@ -7,6 +9,8 @@
 }
 
 .webforms__description{
+	display: none;
+	
 	color: $body-color;
 	font-size: $sm__font-size;
 	letter-spacing: 0.5px;

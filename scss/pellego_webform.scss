@@ -41,15 +41,13 @@
 		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
 	}
 
-	#webforms__fields-container div:first-of-type div:first-of-type .webforms__field{
-		display: none;
-	}
-
 
 	@import "_snippets/header.scss";
+	@import "_snippets/field_sizes.scss";
 	@import "_snippets/group_dividers.scss";
 	@import "_snippets/labels.scss";
 	@import "_snippets/inputs.scss";
+	@import "_snippets/tooltips.scss";
 	@import "_snippets/buttons.scss";
 	@import "_snippets/input_addons.scss";
 
@@ -59,14 +57,14 @@
 @media (min-width: 768px){
 	.pellego_custom_form{
 		padding: 40px;
-		font-size: 14px;
+		font-size: 13px;
 	}
 }
 
 @media (min-width: 1200px){
 	.pellego_custom_form{
-		padding-left: 200px;
-		padding-right: 200px;
+		padding-left: 0;
+		padding-right: 0;
 
 		.company_logo{
 			max-width: 1170px;

@@ -3,6 +3,7 @@
 	&::before{
 		content: "Contact Info";
 		@include group_divider_style();
+		margin-top: 0;
 	}
 
 	// If the 7th field is the first "Deal Alerts" field in the new group
@@ -51,6 +52,7 @@
 			&::before{
 				content: "Others";
 				@include group_divider_style();
+				width: 210.52%;
 			}
 		}
 	}
