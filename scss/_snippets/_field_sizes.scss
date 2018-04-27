@@ -53,10 +53,10 @@
 }
 
 @media (min-width: 768px){
-	#webforms__fields-container > div:first-of-type > div:nth-child(3), #webforms__fields-container > div:first-of-type > div:nth-child(5), #webforms__fields-container > div:first-of-type > div:nth-child(7), #webforms__fields-container div:nth-child(n+20):nth-child(-n+22), #webforms__fields-container > div:first-of-type > div:nth-child(28){
+	#webforms__fields-container > div:first-of-type > div:nth-child(3), #webforms__fields-container > div:first-of-type > div:nth-child(5), #webforms__fields-container > div:first-of-type > div:nth-child(7), #webforms__fields-container div:nth-child(n+20):nth-child(-n+22),#webforms__fields-container > div:first-of-type > div:nth-child(n+24):nth-child(-n+26), #webforms__fields-container > div:first-of-type > div:nth-child(28), #webforms__fields-container div:nth-child(31){
 		margin-right: 5%;
 	}
-	#webforms__fields-container > div:first-of-type > div:nth-child(n+3):nth-child(-n+7), #webforms__fields-container > div:first-of-type > div:nth-child(8), #webforms__fields-container > div:first-of-type > div:nth-child(n+28):nth-child(-n+29){
+	#webforms__fields-container > div:first-of-type > div:nth-child(n+3):nth-child(-n+7), #webforms__fields-container > div:first-of-type > div:nth-child(8){
 		width: 47.5%;
 		display: inline-block;
 		vertical-align: bottom;
@@ -87,12 +87,19 @@
 		}
 	}
 
-	#webforms__fields-container div:nth-child(n+20):nth-child(-n+23){
+	#webforms__fields-container div:nth-child(n+20):nth-child(-n+35){
 		width: 21.25%;
 	}
+	#webforms__fields-container div:nth-child(n+24):nth-child(-n+27){
+		vertical-align: bottom;
+	}
 
-	#webforms__fields-container div:nth-child(23){
+	#webforms__fields-container div:nth-child(23), #webforms__fields-container div:nth-child(27), #webforms__fields-container div:nth-child(35){
 		margin-right: 0;
+	}
+
+	#webforms__fields-container div:nth-child(29){
+		margin-right: 52.5%;
 	}
 }
 
@@ -107,12 +114,18 @@
 		div:nth-child(24), div:nth-child(34){
 			margin-right: 0;
 		}
-		div:nth-child(21), div:nth-child(22), div:nth-child(25), div:nth-child(33){
+		div:nth-child(21), div:nth-child(22), div:nth-child(25), div:nth-child(34){
 			margin-right: 5%;
 		}
 	}
 
-	#webforms__fields-container > div:first-of-type > div:nth-child(7), #webforms__fields-container > div:first-of-type > div:nth-child(n+9):nth-child(-n+11), #webforms__fields-container > div:first-of-type > div:nth-child(15){
+	#webforms__fields-container > div:first-of-type > div:nth-child(7){
+		.checkbox{
+			width: 33.2%;
+		}
+	}
+
+	#webforms__fields-container > div:first-of-type > div:nth-child(n+9):nth-child(-n+11), #webforms__fields-container > div:first-of-type > div:nth-child(15){
 		.checkbox{
 			width: 16%;
 

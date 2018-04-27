@@ -60,10 +60,10 @@ label.webforms__label:hover{
 
 #webforms__fields-container{
 	// Smaller inputs
-	div:nth-child(n+23):nth-child(-n+28), div:nth-child(n+31):nth-child(-n+36){
+	div:nth-child(n+34):nth-child(-n+35){
 		.help-block{
 			margin-top: 70px;
-			margin-left: -98px;
+			margin-left: -120px;
 
 			&::after{
 				left: 50%;
@@ -101,22 +101,16 @@ label.webforms__label:hover{
 
 	#webforms__fields-container{
 		// Smaller inputs
-		div:nth-child(n+23):nth-child(-n+28), div:nth-child(n+31):nth-child(-n+36){
+		div:nth-child(n+34):nth-child(-n+35){
 			.help-block{
-				margin-top: 75px;
-				margin-left: -190px;
+				margin-top: -4px;
+				margin-left: 30px;
 
 				&::after{
-					top: -10px;
-					left: 50%;
-				}
-			}
-		}
-
-		div:nth-child(n+35):nth-child(-n+36){
-			.help-block{
-				&::after{
-					border-bottom: none;
+					top: 28px;
+					left: 0;
+					border-top: none;
+					border-bottom: 1px solid $brand-dark-green;
 				}
 			}
 		}
@@ -129,16 +123,12 @@ label.webforms__label:hover{
 	}
 
 	#webforms__fields-container{
-		div:nth-child(n+35):nth-child(-n+36){
+		div:nth-child(n+34):nth-child(-n+35){
 			.help-block{
-				margin-top: -4px;
 				margin-left: 50px;
 
 				&::after{
 					top: 6px;
-					left: 0;
-					border-top: none;
-					border-bottom: 1px solid $brand-dark-green;
 				}
 			}
 		}

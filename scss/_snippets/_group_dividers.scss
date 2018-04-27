@@ -78,5 +78,21 @@
 				}
 			}
 		}
+
+		div:nth-child(24){
+			.webforms__field{
+				&::before{
+					width: 471.5%;
+				}
+			}
+		}
+
+		div:nth-child(30){
+			.webforms__field{
+				&::before{
+					width: 471.5%;
+				}
+			}
+		}
 	}
 }
