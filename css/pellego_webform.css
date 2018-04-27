@@ -43,6 +43,13 @@
       line-height: 30px; } }
   .pellego_custom_form #webforms__fields-container > div:first-of-type > div:first-of-type {
     display: none; }
+  .pellego_custom_form #webforms__fields-container div:nth-child(13), .pellego_custom_form #webforms__fields-container div:nth-child(14) {
+    width: 47.5%;
+    display: inline-block; }
+    .pellego_custom_form #webforms__fields-container div:nth-child(13) .webforms__label, .pellego_custom_form #webforms__fields-container div:nth-child(14) .webforms__label {
+      white-space: nowrap; }
+  .pellego_custom_form #webforms__fields-container div:nth-child(13) {
+    margin-right: 5%; }
   .pellego_custom_form #webforms__fields-container div:nth-child(n+17):nth-child(-n+19) {
     width: 30%;
     display: inline-block; }
@@ -80,7 +87,13 @@
     .pellego_custom_form #webforms__fields-container div:nth-child(24), .pellego_custom_form #webforms__fields-container div:nth-child(34) {
       margin-right: 0; }
     .pellego_custom_form #webforms__fields-container div:nth-child(21), .pellego_custom_form #webforms__fields-container div:nth-child(22), .pellego_custom_form #webforms__fields-container div:nth-child(25), .pellego_custom_form #webforms__fields-container div:nth-child(33) {
-      margin-right: 5%; } }
+      margin-right: 5%; }
+    .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12) .checkbox, .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(16) .checkbox {
+      width: 16%; }
+      .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12) .checkbox:nth-child(n+1):nth-child(-n+4), .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12) .checkbox:nth-child(n+6):nth-child(-n+9), .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(16) .checkbox:nth-child(n+1):nth-child(-n+4), .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(16) .checkbox:nth-child(n+6):nth-child(-n+9) {
+        margin-right: 5%; }
+      .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12) .checkbox:nth-child(5), .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12) .checkbox:nth-child(10), .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(16) .checkbox:nth-child(5), .pellego_custom_form #webforms__fields-container > div:first-of-type > div:nth-child(16) .checkbox:nth-child(10) {
+        margin-right: 0% !important; } }
   .pellego_custom_form #webforms__fields-container::before {
     content: "Contact Info";
     position: relative;
@@ -173,7 +186,7 @@
     -webkit-box-shadow: 0 0 5px 0 #56c3a5;
     box-shadow: 0 0 5px 0 #56c3a5; }
   .pellego_custom_form #webforms__fields-container div:nth-child(14) input[type='number'] {
-    width: 50%;
+    width: 80%;
     max-width: 200px; }
   .pellego_custom_form input[type="radio"], .pellego_custom_form input[type="checkbox"] {
     -webkit-appearance: none;
@@ -249,6 +262,8 @@
     width: 50%;
     max-width: 200px; }
   @media (min-width: 768px) {
+    .pellego_custom_form #webforms__fields-container div:nth-child(14) input[type='number'] {
+      width: 50%; }
     .pellego_custom_form input[type="radio"], .pellego_custom_form input[type="checkbox"] {
       width: 30px;
       height: 30px;

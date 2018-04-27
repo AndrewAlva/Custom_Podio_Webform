@@ -4,6 +4,19 @@
 }
 
 #webforms__fields-container{
+	// "Location center(s)" "Miles from center(s)" number field
+	div:nth-child(13), div:nth-child(14){
+		width: 47.5%;
+		display: inline-block;
+
+		.webforms__label{
+			white-space: nowrap;
+		}
+	}
+	div:nth-child(13){
+		margin-right: 5%;
+	}
+
 	// "Financing" number fields
 	div:nth-child(n+17):nth-child(-n+19){
 		width: 30%;
@@ -87,6 +100,20 @@
 		}
 		div:nth-child(21), div:nth-child(22), div:nth-child(25), div:nth-child(33){
 			margin-right: 5%;
+		}
+	}
+
+	#webforms__fields-container > div:first-of-type > div:nth-child(n+10):nth-child(-n+12), #webforms__fields-container > div:first-of-type > div:nth-child(16){
+		.checkbox{
+			width: 16%;
+
+			&:nth-child(n+1):nth-child(-n+4), &:nth-child(n+6):nth-child(-n+9){
+				margin-right: 5%;
+			}
+
+			&:nth-child(5), &:nth-child(10){
+				margin-right: 0% !important;
+			}
 		}
 	}
 }
