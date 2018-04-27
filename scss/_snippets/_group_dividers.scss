@@ -16,8 +16,8 @@
 		}
 	}
 
-	// If the 10th field is the first "Strategies" field in the new group
-	div:nth-child(10){
+	// If the 9th field is the first "Strategies" field in the new group
+	div:nth-child(9){
 		.webforms__field{
 			&::before{
 				content: "Deal Type";
@@ -26,8 +26,8 @@
 		}
 	}
 
-	// If the 12th field is the first "Counties" field in the new group
-	div:nth-child(12){
+	// If the 11th field is the first "Counties" field in the new group
+	div:nth-child(11){
 		.webforms__field{
 			&::before{
 				content: "Locations";
@@ -36,8 +36,8 @@
 		}
 	}
 
-	// If the 16th field is the first "Loans" field in the new group
-	div:nth-child(16){
+	// If the 15th field is the first "Loans" field in the new group
+	div:nth-child(15){
 		.webforms__field{
 			&::before{
 				content: "Financing";
@@ -46,13 +46,36 @@
 		}
 	}
 
-	// If the 21th field is the first "_" field in the new group
-	div:nth-child(21){
+	// If the 24th field is the first "Flip ROI Criteria" field in the new group
+	div:nth-child(24){
 		.webforms__field{
 			&::before{
-				content: "Others";
+				content: "Flip/Rehab Criteria";
 				@include group_divider_style();
 				width: 210.52%;
+			}
+		}
+	}
+
+	// If the 30th field is the first "Cash Flow" field in the new group
+	div:nth-child(30){
+		.webforms__field{
+			&::before{
+				content: "Rental Criteria";
+				@include group_divider_style();
+				width: 210.52%;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	#webforms__fields-container{
+		div:nth-child(7){
+			.webforms__field{
+				&::before{
+					width: 210.52%;
+				}
 			}
 		}
 	}

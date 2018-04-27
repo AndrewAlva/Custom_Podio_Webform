@@ -23,7 +23,7 @@ input[type='number']{
 
 #webforms__fields-container{
 	// "Locations" number input
-	div:nth-child(14){
+	div:nth-child(13){
 		input[type='number']{
 			width: 80%;
 			max-width: 200px;
@@ -126,7 +126,7 @@ select::-ms-expand{
 @media (min-width: 768px){
 	#webforms__fields-container{
 		// "Locations" number input
-		div:nth-child(14){
+		div:nth-child(13){
 			input[type='number']{
 				width: 50%;
 			}
